@@ -1,5 +1,5 @@
 import "./HomePage.scss";
-import searchBar from "../../components/searchBar/searchBar";
+import SearchBar from "../../components/searchBar/searchBar";
 
 import React from 'react'
 
@@ -8,11 +8,11 @@ export default function HomePage() {
           <div className="homePage">
                <div className="textContainer">
                     <div className="wrapper">
-                         <h1 className="title">Find Real Estate & get Your Dream Place </h1>
+                         <h1 className="title">Find Real Estate & Get Your Dream Place </h1>
 
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                         <searchBar/>
+                         <SearchBar/>
                          <div className="boxes">
                               <div className="box">
                                    <h1>16+</h1>
