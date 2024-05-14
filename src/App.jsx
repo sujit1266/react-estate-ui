@@ -5,6 +5,8 @@ import Layout from "./pages/Layout/Layout";
 import SinglePage from "./pages/SinglePage/SinglePage.jsx";
 import LoginPage from "./pages/LoginPage/LoginPage.jsx";
 import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx";
+import Register from "./pages/Register/Register.jsx";
+import Login from "./pages/Login/Login.jsx";
 
 function App() {
 
@@ -26,12 +28,20 @@ function App() {
           element: (<SinglePage/>)
         },
         {
-          path : "/login",
+          path : "/loginpage",
           element: (<LoginPage/>)
         },
         {
           path : "/profile",
           element: (<ProfilePage/>)
+        },
+        {
+          path : "/register",
+          element: (<Register/>)
+        },
+        {
+          path : "/login",
+          element: (<Login/>)
         }
       ])
     }
