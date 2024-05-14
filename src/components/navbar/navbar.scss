@@ -82,6 +82,48 @@ nav{
                }
           }
 
+          .user{
+               display: flex;
+               align-items: center;
+               font-weight: bold;
+
+               img{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 20px;
+               }
+
+               span{
+                    @include sm{
+                         display: none;
+                    }
+               }
+
+               .profile{
+                    padding: 12px 24px;
+                    background-color: #fece51;
+                    cursor: pointer;
+                    border: none;
+                    position: relative;
+
+                    .notification{
+                         position: absolute;
+                         top: -8px;
+                         right: -8px;
+                         background-color: red;
+                         color: white;
+                         height: 26px;
+                         width: 26px;
+                         border-radius: 50%;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                    }
+               }
+          }
+
           .menu{
                position: absolute;
                top: 0;

@@ -21,11 +21,11 @@ export default function Card({ item }) {
           <div className='features'>
             <div className='feature'>
               <img src='/bed.png'></img>
-              <soan>{item.bedroom} bedroom</soan>
+              <span>{item.bedroom} bedroom</span>
             </div>
             <div className='feature'>
               <img src='/bath.png'></img>
-              <soan>{item.bathroom} bathroom</soan>
+              <span>{item.bathroom} bathroom</span>
             </div>
           </div>
           <div className='icons'>

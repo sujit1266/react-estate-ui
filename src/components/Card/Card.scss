@@ -1,45 +1,62 @@
+@import "../../responsive.scss";
+
+
 .card {
      display: flex;
      gap: 20px;
 
      .imageContainer {
-          flex:2;
+          flex: 2;
           height: 160px;
 
-          img{
+          // @include sm {
+          //      width: 80%;
+          // }
+
+          img {
                height: 100%;
                width: 100%;
                object-fit: cover;
                border-radius: 10px;
+
+               // @include sm {
+               //      height: 100%;
+               //      width: 80%;
+               // }
           }
      }
 
      .textContainer {
-          flex:3;
+          flex: 3;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           gap: 10px;
 
 
-          img{
-               width:16px;
+          img {
+               width: 16px;
                height: 16px;
+
+               @include sm {
+                    width: 14px;
+                    height: 14px;
+               }
           }
 
-          .title{
+          .title {
                font-size: 19px;
                font-weight: 600;
                color: #444;
                transition: all 0.4s ease;
 
-               &:hover{
+               &:hover {
                     color: #000;
                     scale: 1.01;
                }
           }
 
-          .address{
+          .address {
                font-size: 13px;
                display: flex;
                align-items: center;
@@ -47,7 +64,7 @@
                color: #888;
           }
 
-          .price{
+          .price {
                font-size: 18px;
                font-weight: 300;
                padding: 5px;
@@ -56,31 +73,41 @@
                width: max-content;
           }
 
-          .bottom{
+          .bottom {
                display: flex;
                justify-content: space-between;
                gap: 10px;
 
-               .features{
+               .features {
                     display: flex;
                     gap: 10px;
                     font-size: 13px;
 
-                    .feature{
+                    .feature {
                          display: flex;
                          align-items: center;
                          gap: 5px;
                          background-color: whitesmoke;
                          padding: 5px;
                          border-radius: 5px;
+
+                         span{
+                              @include sm{
+                                   font-size: 10px;
+                              }
+                         }
                     }
                }
 
-               .icons{
+               .icons {
                     display: flex;
                     gap: 20px;
 
-                    .icon{
+                    @include sm{
+                         gap: 10px;
+                    }
+
+                    .icon {
                          border: 1px solid #999;
                          padding: 2px 5px;
                          border-radius: 5px;
@@ -89,7 +116,14 @@
                          align-items: center;
                          justify-content: center;
 
-                         &:hover{
+                         img{
+                              @include sm{
+                                   height: 11.5px;
+                                   width: 11.5px;
+                              }
+                         }
+
+                         &:hover {
                               background-color: lightgray;
                          }
                     }

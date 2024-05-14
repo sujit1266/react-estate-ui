@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
 import SinglePage from "./pages/SinglePage/SinglePage.jsx";
 import LoginPage from "./pages/LoginPage/LoginPage.jsx";
+import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx";
 
 function App() {
 
@@ -27,6 +28,10 @@ function App() {
         {
           path : "/login",
           element: (<LoginPage/>)
+        },
+        {
+          path : "/profile",
+          element: (<ProfilePage/>)
         }
       ])
     }
